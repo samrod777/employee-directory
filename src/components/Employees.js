@@ -3,24 +3,25 @@ import React from "react";
 function Employees(props) {
   return (
     <div>
-      <table >
+      <table>
         <tr>
           <th>Picture</th>
-          <th>Firstname</th>
-          <th>Lastname</th>
-          <th>Phone</th>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Phone #</th>
+          <th>ID #</th>
         </tr>
         {props.employeeList.map((employee) => {
           return (
             <tr>
-              <td>{employee.picture.small}</td>
+              <img src={employee.picture.thumbnail}/>
               <td>{employee.name.first}</td>
               <td>{employee.name.last}</td>
               <td>{employee.phone}</td>
+              <td>{employee.id.value}</td>
             </tr>
           );
         })}
-        
       </table>
     </div>
   );
