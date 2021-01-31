@@ -14,7 +14,7 @@ function Employees(props) {
         {props.employeeList.map((employee) => {
           return (
             <tr>
-              <img src={employee.picture.thumbnail}/>
+              <img src={employee.picture.medium}/>
               <td>{employee.name.first}</td>
               <td>{employee.name.last}</td>
               <td>{employee.phone}</td>
@@ -26,4 +26,26 @@ function Employees(props) {
     </div>
   );
 }
+
+
+
+// function sortEmployees(props) {
+//     const { products } = props;
+//     let sortedProducts = [...products];
+//     sortedProducts.sort((a, b) => {
+//       if (a.name < b.name) {
+//         return -1;
+//       }
+//       if (a.name > b.name) {
+//         return 1;
+//       }
+//       return 0;
+//     });
+//     return (
+//       <Table>
+//         {/* as before */}
+//       </Table>
+//     );
+//   }
+
 export default Employees;
