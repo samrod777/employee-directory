@@ -37,7 +37,7 @@ Github Repository URL:  https://github.com/samrod777/employee-directory
 
 To see the App live follow the below link:
 
-
+https://samrod777.github.io/employee-directory/
 
 ## License
 This application is covered under the MIT license.  
