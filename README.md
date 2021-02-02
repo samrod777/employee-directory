@@ -16,7 +16,7 @@
 - [License](#License) 
 
 ## About the Project
-This is a React Application that presents the use with a list of employees, the list can be filtere and also sorted by last name.  
+This is a React Application that presents the user with a list of employees; the list can be filtered by typing the first or last name of an employee in the search box, the list can also be sorted Alphabeticaly by clicking on the last name column.  
   
 ## Getting Started  
 To get started, follow the Installation instructions below.    
