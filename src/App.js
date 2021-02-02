@@ -1,24 +1,12 @@
-import React, {useEffect, useState} from "react";
-import './App.css';
-import axios from "axios";
-import Employees from "./components/Employees";
+import React from "react";
 import Jumbotron from "./components/Jumbotron";
-import Search from "./components/Search";
-
+import DirContainer from "./components/DirContainer";
 
 function App() {
-const [employees, setEmployees] = useState([])
-  useEffect(() => {
-    axios.get("https://randomuser.me/api/?results=200&nat=us")
-    .then((data) => {
-      setEmployees(data.data.results)
-    } )
-  }, [])
   return (
     <div className="App">
-      <Jumbotron/>
-      <Search/>
-      <Employees employeeList={employees}/>
+      <Jumbotron />
+      <DirContainer />
     </div>
   );
 }
