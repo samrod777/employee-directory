@@ -11,7 +11,7 @@ function Jumbotron() {
   return (
     <div className="jumbotron jumbotron-fluid" style={styles.jumbotron}>
       <div className="container">
-        <h1 className="display-4">Employee Directory</h1>
+        <h1 className="display-10, sm-12">Employee Directory</h1>
         <p className="lead">To find an employee begin typing a first or last name in the search box, or click on the Last Name Column to Alphabetize</p>
       </div>
     </div>
